@@ -35,6 +35,13 @@ library(palmerpenguins)
 ### \[Your Name\] — \[Your Visualization, e.g. "Body Mass by Species"\]
 
 ```{r}
-# Make your agreed-upon plot here, e.g.:
-#penguins |> ggplot(aes(x = species, y = body_mass_g, fill = species)) + geom_boxplot()
+penguins_fix = penguins |> 
+  filter(!is.na(sex))
+penguins_fix |> ggplot(aes(x = sex, y = flipper_length_mm, fill = sex)) + geom_boxplot() +
+  labs(
+    title = "Penguin flipper length by Sex",
+    x = "Penguin Sex",
+    y = "Flipper Length (mm)"
+  )
+
 ```
