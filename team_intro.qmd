@@ -1,5 +1,5 @@
 ---
-title: "Team [TEAM NAME] — Intro"
+title: "Team Brave — Intro"
 format: html
 ---
 
@@ -8,8 +8,9 @@ format: html
 <!-- Everyone: add your name below, one per line. You will likely collide with a teammate
      editing this same list at the same time — that's expected, and it's your first real
      merge conflict. Resolve it together rather than one person overwriting the other. -->
+    
 
--
+- Jerrick Kamaraj
 
 ## Team Visualizations
 
@@ -24,9 +25,16 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-### [Your Name] — [Your Visualization, e.g. "Body Mass by Species"]
+### Jerrick — Penguin Flipper Length by Sex
 
 ```{r}
-# Make your agreed-upon plot here, e.g.:
-# penguins |> ggplot(aes(x = species, y = body_mass_g, fill = species)) + geom_boxplot()
+penguins_fix = penguins |> 
+  filter(!is.na(sex))
+penguins_fix |> ggplot(aes(x = sex, y = flipper_length_mm, fill = sex)) + geom_boxplot() +
+  labs(
+    title = "Penguin flipper length by Sex",
+    x = "Penguin Sex",
+    y = "Flipper Length (mm)"
+  )
+
 ```
