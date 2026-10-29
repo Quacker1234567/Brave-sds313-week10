@@ -1,5 +1,5 @@
 ---
-title: "Team [TEAM NAME] — Intro"
+title: "Team Brave — Intro"
 format: html
 ---
 
@@ -12,6 +12,9 @@ format: html
 ```
 
 - Shravya Nayani
+- Amy Nguyen
+- Alirat Oladejo
+- Mike Christner
 
 ## Team Visualizations
 
@@ -32,5 +35,5 @@ library(palmerpenguins)
 
 ```{r}
 # Make your agreed-upon plot here, e.g.:
-# penguins |> ggplot(aes(x = species, y = body_mass_g, fill = species)) + geom_boxplot()
+#penguins |> ggplot(aes(x = species, y = body_mass_g, fill = species)) + geom_boxplot()
 ```
