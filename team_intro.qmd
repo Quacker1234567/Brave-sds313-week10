@@ -12,6 +12,7 @@ format: html
 ```
 
 - Alirat Oladejo
+- Mike Christner
 
 ## Team Visualizations
 
